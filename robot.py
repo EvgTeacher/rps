@@ -1,9 +1,4 @@
-details_damage_price = {"energy gun": 100, "minigun": 70, "Thor hammer": 50, "laser gun": 80, "rail gun": 90, "sniper rifle": 150}
 
-details_survive_price = {"shield": 50, "energy shield": 80, "resist": 30, "evasion": 100, "armor": 140}
-
-user_list = []
-users_bot = {}
 
 def player_maker(player_list):
     user_choose = "yes"
@@ -61,4 +56,12 @@ def bot_maker(start_sum, player_list):
                 start_sum = max_start_sum
             if start_sum < min_start_sum:
                 start_sum = min_start_sum
+
+
+details_damage_price = {"energy gun": 100, "minigun": 70, "Thor hammer": 50, "laser gun": 80, "rail gun": 90, "sniper rifle": 150}
+
+details_survive_price = {"shield": 50, "energy shield": 80, "resist": 30, "evasion": 100, "armor": 140}
+
+user_list = []
+users_bot = {}
 bot_maker(start_sum=start_sum, player_list=player_list)
