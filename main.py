@@ -10,28 +10,29 @@ def game():
         print('Computer select - ', comp_choice)
         if choice.lower() == comp_choice:
             print('Draw')
-            print('Score, Computer', result['computer'], '-', result['user'])
+            print(f"Score, Computer {result['computer']:=^15d} - {result['user']:=^15n}")
         elif choice.lower() == 'r' and comp_choice == 'p':
             result['computer'] += 1
-            print('Score, Computer', result['computer'], '-', result['user'])
+            print(f"Score, Computer {result['computer']:=^15d} - {result['user']:=^15n}")
         elif choice.lower() == 'r' and comp_choice == 's':
             result['user'] += 1
-            print('Score, Computer', result['computer'], '-', result['user'])
+            print(f"Score, Computer {result['computer']:=^15d} - {result['user']:=^15n}")
         elif choice.lower() == 'p' and comp_choice == 's':
             result['computer'] += 1
-            print('Score, Computer', result['computer'], '-', result['user'])
+            print(f"Score, Computer {result['computer']:=^15d} - {result['user']:=^15n}")
         elif choice.lower() == 'p' and comp_choice == 'r':
             result['user'] += 1
-            print('Score, Computer', result['computer'], '-', result['user'])
+            print(f"Score, Computer {result['computer']:=^15d} - {result['user']:=^15n}")
         elif choice.lower() == 's' and comp_choice == 'r':
             result['computer'] += 1
-            print('Score, Computer', result['computer'], '-', result['user'])
+            print(f"Score, Computer {result['computer']:=^15d} - {result['user']:=^15n}")
         elif choice.lower() == 's' and comp_choice == 'p':
             result['user'] += 1
-            print('Score, Computer', result['computer'], '-', result['user'])
+            print(f"Score, Computer {result['computer']:=^15d} - {result['user']:=^15n}")
     user = input('y/n')
     if user == 'y':
         game()
+    else: print('Exit ')
 
 
 
