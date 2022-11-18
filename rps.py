@@ -29,10 +29,7 @@ def game(choice, result):
 
 
 result = {'computer': 0, 'user': 0}
-# choice = input('Select R / P / S ')
-
-# game(choice, result)
-
 for i in range(5):
     choice = input('Select R / P / S ')
     game(choice, result)
+
